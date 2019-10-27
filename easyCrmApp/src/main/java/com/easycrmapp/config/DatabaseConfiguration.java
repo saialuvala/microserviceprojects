@@ -21,7 +21,7 @@ public class DatabaseConfiguration {
 	@ConfigurationProperties(prefix = "spring.datasource")
 	@Primary
 	public DataSource createDatasourceForCRM() {
-		System.out.println("1.......createDatasourceForCRM");
+		System.out.println("1.......createDatasourceForCRM---------------------");
 		return  (DataSource) DataSourceBuilder.create().build();
 	}
 	
